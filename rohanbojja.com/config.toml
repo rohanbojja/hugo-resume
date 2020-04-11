@@ -1,5 +1,5 @@
 title = "Rohan Bojja"
-baseURL = "https://example.com/"
+baseURL = "https://compassionate-feynman-4409a0.netlify.com/"
 theme = "hugo-resume"
 languageCode = "en-us"
 PygmentsCodeFences = true
