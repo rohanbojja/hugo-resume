@@ -1,5 +1,4 @@
 [build]
-publish = "rohanbojja.com/public"
 command = "hugo --gc --minify"
 
 [context.production.environment]
