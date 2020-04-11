@@ -1,15 +1,15 @@
 [
     {
-        "school":"[Rochester Institute of Technology](https://rit.edu)",
-        "degree":"Bachelor of Science",
-        "major":"Management Information Systems",
-        "notes":"Beta Gamma Signma, High Honors",
-        "range":"2006 - 2008"
+        "school":"[MVSR Engineering College, Hyderabad.](https://www.mvsrec.edu.in/)",
+        "degree":"Bachelor of Engineering",
+        "major":"Computer Science",
+        "notes":"",
+        "range":"2017 - 2020"
     },
     {
-        "school":"Clinton Community College",
-        "degree":"Associate of Applied Science",
-        "major":"Computer Information Systems",
-        "range":"2004 - 2006"
+        "school":"[Indian Institute of Information Technology, Sri City.](http://www.iiits.ac.in/)",
+        "degree":"Bachelor of Technology",
+        "major":"Computer Science",
+        "range":"2015 - 2017"
     }
 ]
