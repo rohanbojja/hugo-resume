@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "Rohan Bojja",
+    "label": "Programmer",
+    "picture": "",
+    "email": "rohanbojja@outlook.com",
+    "phone": "+91 (903) 021-9986",
+    "website": "http://rohanbojja.com",
+    "summary": "Self-proclaimed software developer and machine learning engineer with a lot of enthusiasm and a moderate amount of experience in both the fields. Looking for opportunities to improve my current skillset and to pick up new skills to produce outstanding results.",
+    "location": {
+      "address": "House 31, Road 13, Banjara Hills, Hyderabad.",
+      "postalCode": "500036",
+      "city": "Hyderabad",
+      "countryCode": "IN",
+      "region": "Telangana"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "rohanbojja",
+        "url": ""
+      },
+      {
+        "network": "SoundCloud",
+        "username": "rohanbojja",
+        "url": "https://soundcloud.com/rohanbojja"
+      },
+	  {
+        "network": "Github",
+        "username": "rohanbojja",
+        "url": "https://github.com/rohanbojja"
+      },
+	  {
+        "network": "StackOverflow",
+        "username": "rohanbojja",
+        "url": "https://stackoverflow.com/users/story/726872"
+      },
+	  {
+        "network": "LinkedIn",
+        "username": "rohanbojja",
+        "url": "https://www.linkedin.com/in/rohanbojja/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "UrbanRider",
+      "position": "Lead Software Developer",
+      "website": "http://urbanrider.in",
+      "startDate": "2019-06-26",
+      "endDate": "2020-02-21",
+      "summary": "UrbanRider is an early-stage startup in Hyderabad, that deals with road-side assistance.",
+      "highlights": [
+        "Built two Android application written in Kotlin for the company.",
+        "Utilized Firebase mBaaS for the architecture of the platform.",
+        "Build an algorithm to find nearby service providers for connecting the users.",
+		"Maintained their GIT repo.",
+		"Worked on a web interface for admin/moderator panel."
+      ]
+    },
+	{
+      "company": "Audient",
+      "position": "Owner",
+      "website": "https://github.com/users/rohanbojja/projects/1",
+      "startDate": "2019-10-23",
+      "summary": "Music genre classification using machine learning.",
+	  "highlights": [
+        "Azure function written in C# to analyse features and send prediction result.",
+        "A WPF application to extract audio features from a music library for further processing.",
+        "A ML.NET pipeline for pre-processing and normalizing the data.",
+		"A Xamarin Forms application for end-user consumption. (IOS/Android)",
+		"A Blazor web application for end-user consumption. (Web assembly)"
+      ]
+    },
+	{
+      "company": "Transter",
+      "position": "Owner",
+      "website": "https://github.com/users/rohanbojja/projects/1",
+      "startDate": "2020-03-15",
+      "summary": "Road-side assistance for everyone.",
+	  "highlights": [
+        "An android application for the consumer and the provider.",
+        "A moderator/admin web panel."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "IIIT-S Coding Club",
+      "position": "Mentor",
+      "website": "",
+      "startDate": "2016-07-23",
+      "endDate": "2016-07-23",
+      "summary": "A coding club for our college freshers."
+    }
+  ],
+  "education": [
+    {
+        "institution":"MVSR Engineering College, Hyderabad.",
+        "studyType":"Bachelor of Engineering",
+        "area":"Computer Science",
+        "startDate": "2017-01-01",
+		"endDate": "2020-01-01"
+    },
+    {
+        "institution":"Indian Institute of Information Technology, Sri City.",
+        "studyType":"Bachelor of Technology",
+        "area":"Computer Science",
+        "startDate": "2015-01-01",
+		"endDate": "2017-01-01"
+    }
+  ],
+  "publications": [{
+    "name": "Rubik's Cube Solver",
+    "publisher": "Github",
+    "releaseDate": "2017-03-07",
+    "website": "https://github.com/rohanbojja/RCS",
+    "summary": "A robot designed to solve the Rubik’s cube efficiently. Raspberry Pi 2 was used to run the scripts which would take the state of the cube, compute the shortest path, and turns the Servo motors which hold the Rubik’s cube in place to solve the cube."
+  },
+  {
+    "name": "Virtual-OS",
+    "publisher": "Github",
+    "releaseDate": "2016-10-30",
+    "website": "https://github.com/rohanbojja/Virtual-OS",
+    "summary": "A .NET desktop platform that mimics the look and feel of a classic desktop operating systems such as Microsoft Windows, Mac OS X or KDE. Written in C# for my semester project."
+  },
+  {
+    "name": "Transport Management System",
+    "publisher": "Github",
+    "releaseDate": "2016-10-30",
+    "website": "https://github.com/rohanbojja/Virtual-OS",
+    "summary": "A .NET desktop platform that mimics the look and feel of a classic desktop operating systems such as Microsoft Windows, Mac OS X or KDE. Written in C# for my semester project."
+  }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+		"Blazor",
+        "HTML5",
+        "CSS",
+        "Javascript",
+		".NET Core",
+		"Python frameworks"
+      ]
+    },
+	{
+      "name": "Python",
+      "level": "Master",
+      "keywords": [
+		"Keras",
+        "Numpy",
+        "Scikit-learn",
+        "Pandas",
+		"Matplotlib",
+		".NET Core",
+		"Python frameworks"
+      ]
+    },
+	{
+      "name": "Julia",
+      "level": "Master",
+      "keywords": [
+		"Building ML pipelines",
+        "Data pre-processing",
+        "Flux.ml",
+        "MLJ",
+		"XGBoost",
+		"Plots.jl",
+		"Gadfly"
+      ]
+    },
+	{
+      "name": "Firebase",
+      "level": "Master",
+      "keywords": [
+		"Firestore",
+        "Real-time Database",
+        "Firebase Storage",
+        "Firebase Auth"
+      ]
+    },
+    {
+      "name": "Kotlin/Java",
+      "level": "Master",
+      "keywords": [
+        "Android application development",
+        "General-purpose programming"
+      ]
+    },
+	{
+      "name": "C#",
+      "level": "Master",
+      "keywords": [
+        "Mobile application development with Xamarin",
+        "General-purpose programming",
+		"Data science",
+		"Machine learning using ML.NET"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music production and composition",
+      "keywords": [
+        "Electronica",
+        "Progressive music",
+		"Dance",
+		"Ambient",
+		"Bootlegs/remixes"
+      ]
+    },
+	{
+      "name": "Competitive Coding",
+      "keywords": [
+        "HackerRank",
+        "CodeChef",
+		"Codejam"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

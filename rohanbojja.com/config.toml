@@ -1,55 +1,113 @@
+baseurl = "https://rohanbojja.netlify.com/"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
 title = "Rohan Bojja"
-baseURL = "https://rohanbojja.netlify.com/"
-theme = "hugo-resume"
-languageCode = "en-us"
-PygmentsCodeFences = true
-PygmentsCodeFencesGuessSyntax = true
-PygmentsStyle = "monokai"
-enableGitInfo = false
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
 
-[params]
-address = "Hyderabad, IN"
-email = "rohanbojja@outlook.com"
-favicon = "/favicon.ico"
-firstName = "Rohan"
-lastName = "Bojja"
-phone = "91-903-021-9986"
-profileImage = "img/IMG_0027.jpg"
-showEducation = true
-showExperience = true
-showOpenSource = true
-showProjects = true
-showPublications = true
-showQr = true
-showSkills = true
+[Params]
+#  homeTitle = "A blog of sorts." # Set a different text for the header on the home page
+  subtitle = "A self-proclaimed software developer and machine learning engineer."
+  mainSections = ["post","posts"]
+  logo = "img/IMG_0027.jpg" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-[params.google]
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
 
-[params.google.analytics]
-trackerID = "XX-123446-01"
+[Author]
+  name = "Rohan Bojja"
+  website = "rohanbojja.com"
+  email = "rohanbojja@outlook.com"
+  facebook = "rohanbojja"
+  github = "rohanbojja"
+  gitlab = "username"
+  bitbucket = "username"
+  twitter = "username"
+  reddit = "username"
+  linkedin = "rohanbojja"
+  xing = "username"
+  stackoverflow = "users/story/726872/"
+  snapchat = "username"
+  instagram = "username"
+  youtube = "user/username" # or channel/channelname
+  soundcloud = "username"
+  spotify = "username"
+  bandcamp = "username"
+  itchio = "username"
+  vk = "username"
+  paypal = "username"
+  telegram = "username"
+  500px = "username"
+  codepen = "username"
+  mastodon = "url"
+  kaggle = "username"
+  weibo = "username"
+  slack = "username"
 
-[[params.handles]]
-link = "https://www.linkedin.com/in/rohanbojja/"
-name = "LinkedIn"
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
 
-[[params.handles]]
-link = "https://github.com/rohanbojja/"
-name = "GitHub"
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
 
-[[params.handles]]
-link = "https://bitbucket.org/rohanbojja/"
-name = "Bitbucket"
+[[menu.main]]
+    identifier = "samples"
+    name = "Samples"
+    weight = 2
 
-[[params.handles]]
-link = "https://stackoverflow.com/users/story/726872"
-name = "Stack Overflow"
+[[menu.main]]
+    parent = "samples"
+    name = "Big Image Sample"
+    url = "post/2017-03-07-bigimg-sample"
+    weight = 1
 
-[[params.handles]]
-link = "https://keybase.io/"
-name = "Keybase"
+[[menu.main]]
+    parent = "samples"
+    name = "Math Sample"
+    url = "post/2017-03-05-math-sample"
+    weight = 2
 
-[outputs]
-home = ["HTML", "JSON"]
+[[menu.main]]
+    parent = "samples"
+    name = "Code Sample"
+    url = "post/2016-03-08-code-sample"
+    weight = 3
 
-[taxonomies]
-tag = "tags"
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3

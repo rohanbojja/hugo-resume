@@ -1,12 +1,2 @@
----
-title: "Home"
-date: 2018-02-10T18:56:13-05:00
-sitemap:
-  priority : 1.0
-
-outputs:
-- html
-- rss
-- json
----
-Self-proclaimed software developer and machine learning engineer with moderate amount of experience in both the fields.
+## Front Page Content
+`beautifulhugo` supports content on your front page. Edit `/content/_index.md` to change what appears here. Delete `/content/_index.md` if you don't want any content here.
