@@ -8,7 +8,7 @@
     "website": "http://rohanbojja.com",
     "summary": "Self-proclaimed software developer and machine learning engineer with lots of enthusiasm and a moderate amount of experience in both the fields.",
     "location": {
-      "address": "House 31, Road 13, Banjara Hills, Hyderabad.",
+      "address": "",
       "postalCode": "500036",
       "city": "Hyderabad",
       "countryCode": "IN",
@@ -19,7 +19,7 @@
       {
         "network": "SoundCloud",
         "username": "rohanbojja",
-        "url": "https://soundcloud.com/rohanbojja"
+        "url": "https://soundcloud.com/rohanbojja/popular-tracks"
       },
 	  {
         "network": "Github",
@@ -35,7 +35,12 @@
         "network": "LinkedIn",
         "username": "rohanbojja",
         "url": "https://www.linkedin.com/in/rohanbojja/"
-      }
+      },
+	  {
+		"network": "Portfolio",
+		"username": "Updated portfolio.",
+		"url": "https://www.rohanbojja.com/page/resume.html"
+	  }
     ]
   },
   "work": [
