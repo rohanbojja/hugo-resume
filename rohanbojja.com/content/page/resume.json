@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Rohan Bojja",
-    "label": "Programmer",
+    "label": "Developer",
     "picture": "",
     "email": "rohanbojja@outlook.com",
     "phone": "+91 (903) 021-9986",
     "website": "http://rohanbojja.com",
-    "summary": "Self-proclaimed software developer and machine learning engineer with a lot of enthusiasm and a moderate amount of experience in both the fields. Looking for opportunities to improve my current skillset and to pick up new skills to produce outstanding results.",
+    "summary": "Self-proclaimed software developer and machine learning engineer with lots of enthusiasm and a moderate amount of experience in both the fields.",
     "location": {
       "address": "House 31, Road 13, Banjara Hills, Hyderabad.",
       "postalCode": "500036",
@@ -15,11 +15,7 @@
       "region": "Telangana"
     },
     "profiles": [
-      {
-        "network": "Twitter",
-        "username": "rohanbojja",
-        "url": ""
-      },
+
       {
         "network": "SoundCloud",
         "username": "rohanbojja",
@@ -52,35 +48,10 @@
       "summary": "UrbanRider is an early-stage startup in Hyderabad, that deals with road-side assistance.",
       "highlights": [
         "Built two Android application written in Kotlin for the company.",
-        "Utilized Firebase mBaaS for the architecture of the platform.",
+        "Utilized Firebase mBaaS for building the platform.",
         "Build an algorithm to find nearby service providers for connecting the users.",
 		"Maintained their GIT repo.",
-		"Worked on a web interface for admin/moderator panel."
-      ]
-    },
-	{
-      "company": "Audient",
-      "position": "Owner",
-      "website": "https://github.com/users/rohanbojja/projects/1",
-      "startDate": "2019-10-23",
-      "summary": "Music genre classification using machine learning.",
-	  "highlights": [
-        "Azure function written in C# to analyse features and send prediction result.",
-        "A WPF application to extract audio features from a music library for further processing.",
-        "A ML.NET pipeline for pre-processing and normalizing the data.",
-		"A Xamarin Forms application for end-user consumption. (IOS/Android)",
-		"A Blazor web application for end-user consumption. (Web assembly)"
-      ]
-    },
-	{
-      "company": "Transter",
-      "position": "Owner",
-      "website": "https://github.com/users/rohanbojja/projects/1",
-      "startDate": "2020-03-15",
-      "summary": "Road-side assistance for everyone.",
-	  "highlights": [
-        "An android application for the consumer and the provider.",
-        "A moderator/admin web panel."
+		"Worked on a web interface for admin/moderator panel. (Cloud functions in TS/JS)"
       ]
     }
   ],
@@ -88,10 +59,21 @@
     {
       "organization": "IIIT-S Coding Club",
       "position": "Mentor",
-      "website": "",
+      "website": "http://www.iiits.ac.in",
       "startDate": "2016-07-23",
       "endDate": "2016-07-23",
       "summary": "A coding club for our college freshers."
+    },
+	{
+      "organization": "Transter",
+      "position": "Co-founder",
+      "website": "https://github.com/rohanbojja/transter-android-user",
+      "startDate": "2020-03-11",
+      "summary": "Road-side assistance for everyone. [WIP]",
+	  "highlights": [
+        "Two mobile applications written in Kotlin(In the process of porting to Xamarin).",
+        "A moderator/admin web panel.(WIP, working with Blazor)"
+      ]
     }
   ],
   "education": [
@@ -115,8 +97,15 @@
     "publisher": "Github",
     "releaseDate": "2017-03-07",
     "website": "https://github.com/rohanbojja/RCS",
-    "summary": "A robot designed to solve the Rubik’s cube efficiently. Raspberry Pi 2 was used to run the scripts which would take the state of the cube, compute the shortest path, and turns the Servo motors which hold the Rubik’s cube in place to solve the cube."
+    "summary": "A robot designed to solve the Rubik’s cube efficiently. Raspberry Pi 2 was used to run Python scripts which would take the state of the cube, compute the shortest path, and turns the servo motors which hold the Rubik’s cube in place, to solve the cube."
   },
+  {
+      "name": "Audient",
+      "publisher": "Github",
+      "website": "https://github.com/users/rohanbojja/projects/1",
+      "releaseDate": "2019-10-23",
+      "summary": "Music genre classification using machine learning. Azure function to analyse features and send prediction result. A WPF application to extract audio features from a music library for further processing. A ML.NET pipeline for pre-processing and normalizing the data. A Xamarin Forms and a Blazor web application for end-user consumption. Written entirely in C#."
+    },
   {
     "name": "Virtual-OS",
     "publisher": "Github",
@@ -127,9 +116,9 @@
   {
     "name": "Transport Management System",
     "publisher": "Github",
-    "releaseDate": "2016-10-30",
-    "website": "https://github.com/rohanbojja/Virtual-OS",
-    "summary": "A .NET desktop platform that mimics the look and feel of a classic desktop operating systems such as Microsoft Windows, Mac OS X or KDE. Written in C# for my semester project."
+    "releaseDate": "2018-10-30",
+    "website": "",
+    "summary": "A transportation management system that gives the real time location of the buses and their paths. A web service (web2py) and an Android application(written in Java)."
   }
   ],
   "skills": [
@@ -140,22 +129,21 @@
 		"Blazor",
         "HTML5",
         "CSS",
-        "Javascript",
-		".NET Core",
-		"Python frameworks"
+        "Javascript"
       ]
     },
 	{
       "name": "Python",
       "level": "Master",
       "keywords": [
-		"Keras",
+		"Keras/TF",
         "Numpy",
         "Scikit-learn",
         "Pandas",
 		"Matplotlib",
 		".NET Core",
-		"Python frameworks"
+		"Web2py/Flask",
+		"General-purpose scripting"
       ]
     },
 	{
@@ -193,10 +181,13 @@
       "name": "C#",
       "level": "Master",
       "keywords": [
-        "Mobile application development with Xamarin",
+        "Xamarin",
+		"Azure Functions",
+		"WPF applications",
         "General-purpose programming",
 		"Data science",
-		"Machine learning using ML.NET"
+		"Machine learning using ML.NET",
+		"MVVM architecture"
       ]
     }
   ],
@@ -204,6 +195,14 @@
     {
       "language": "English",
       "fluency": "Native speaker"
+    },
+	{
+      "language": "Telugu",
+      "fluency": "Somwhat of a native speaker"
+    },
+	{
+      "language": "Hindi",
+      "fluency": "Not super fluent."
     }
   ],
   "interests": [
@@ -218,18 +217,19 @@
       ]
     },
 	{
-      "name": "Competitive Coding",
+      "name": "Computer science stuff",
       "keywords": [
         "HackerRank",
         "CodeChef",
-		"Codejam"
+		"Kaggle"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
+    },
+	{
+	  "name": "Outdoor stuff",
+	  "keywords": [
+		"Badminton",
+		"Soccer"
+      ]
+	}
   ]
 }
