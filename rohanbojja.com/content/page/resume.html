@@ -1,670 +1,825 @@
 <!doctype html>
 <html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Rohan Bojja</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Rohan Bojja</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
 }
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
+
 h1,
 h2,
 h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
 h4 {
-	margin-top: 0
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
 }
-section {
-	margin-top: 30px;
+
+h4.bold {
+  font-weight: 700;
 }
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
 li {
-	line-height: 1.8;
-	list-style: none;
+  font-size: 11px;
 }
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
+
 blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
 }
+
 em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
+  color: #999;
 }
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
 }
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
 .container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+  padding-top: 20px;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Rohan Bojja
-					</h1>
-					<h2>
-						Developer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+.pull-left {
+  float: left;
+}
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">rohanbojja@outlook.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+91 (903) 021-9986</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://rohanbojja.com">http://rohanbojja.com</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>Self-proclaimed software developer and machine learning engineer with lots of enthusiasm and a moderate amount of experience in both the fields.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						SoundCloud
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://soundcloud.com/rohanbojja/popular-tracks">rohanbojja</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/rohanbojja">rohanbojja</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						StackOverflow
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://stackoverflow.com/users/story/726872">rohanbojja</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/rohanbojja/">rohanbojja</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Portfolio
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.rohanbojja.com/page/resume.html">Updated portfolio.</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+.pull-right {
+  float: right;
+}
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>UrbanRider</span>
-					<span class="date">
-						2019-06-26 — 2020-02-21
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://urbanrider.in">http://urbanrider.in</a>
-				</div>
-				<div class="position">
-					Lead Software Developer
-				</div>
-				<div class="summary">
-					<p>UrbanRider is an early-stage startup in Hyderabad, that deals with road-side assistance.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Built two Android application written in Kotlin for the company.</li>
-					<li class="bullet">Utilized Firebase mBaaS for building the platform.</li>
-					<li class="bullet">Build an algorithm to find nearby service providers for connecting the users.</li>
-					<li class="bullet">Maintained their GIT repo.</li>
-					<li class="bullet">Worked on a web interface for admin/moderator panel. (Cloud functions in TS/JS)</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>IIIT-S Coding Club</span>
-					<span class="date">
-						2016-07-23 — 2016-07-23
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.iiits.ac.in">http://www.iiits.ac.in</a>
-				</div>
-				<div class="position">
-					Mentor
-				</div>
-				<div class="summary">
-					<p>A coding club for our college freshers.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Transter</span>
-					<span class="date">
-						2020-03-11 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/rohanbojja/transter-android-user">https://github.com/rohanbojja/transter-android-user</a>
-				</div>
-				<div class="position">
-					Co-founder
-				</div>
-				<div class="summary">
-					<p>Road-side assistance for everyone. [WIP]</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Two mobile applications written in Kotlin(In the process of porting to Xamarin).</li>
-					<li class="bullet">A moderator/admin web panel.(WIP, working with Blazor)</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>MVSR Engineering College, Hyderabad.</span>
-					<span class="date">
-						2017-01-01 — 2020-01-01
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science
-				</div>
-				<div class="studyType">
-					Bachelor of Engineering
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Indian Institute of Information Technology, Sri City.</span>
-					<span class="date">
-						2015-01-01 — 2017-01-01
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science
-				</div>
-				<div class="studyType">
-					Bachelor of Technology
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Rubik&#x27;s Cube Solver</span>
-					<span class="date">
-						2017-03-07
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/rohanbojja/RCS"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Github</strong>
-				</div>
-				<div class="summary">
-					<p>A robot designed to solve the Rubik’s cube efficiently. Raspberry Pi 2 was used to run Python scripts which would take the state of the cube, compute the shortest path, and turns the servo motors which hold the Rubik’s cube in place, to solve the cube.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Audient</span>
-					<span class="date">
-						2019-10-23
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/users/rohanbojja/projects/1"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Github</strong>
-				</div>
-				<div class="summary">
-					<p>Music genre classification using machine learning. Azure function to analyse features and send prediction result. A WPF application to extract audio features from a music library for further processing. A ML.NET pipeline for pre-processing and normalizing the data. A Xamarin Forms and a Blazor web application for end-user consumption. Written entirely in C#.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Virtual-OS</span>
-					<span class="date">
-						2016-10-30
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://github.com/rohanbojja/Virtual-OS"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Github</strong>
-				</div>
-				<div class="summary">
-					<p>A .NET desktop platform that mimics the look and feel of a classic desktop operating systems such as Microsoft Windows, Mac OS X or KDE. Written in C# for my semester project.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Transport Management System</span>
-					<span class="date">
-						2018-10-30
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href=""></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Github</strong>
-				</div>
-				<div class="summary">
-					<p>A transportation management system that gives the real time location of the buses and their paths. A web service (web2py) and an Android application(written in Java).</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Blazor</li>
-					<li>HTML5</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Python</h4>
-				</div>
-				<ul class="keywords">
-					<li>Keras/TF</li>
-					<li>Numpy</li>
-					<li>Scikit-learn</li>
-					<li>Pandas</li>
-					<li>Matplotlib</li>
-					<li>.NET Core</li>
-					<li>Web2py/Flask</li>
-					<li>General-purpose scripting</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Julia</h4>
-				</div>
-				<ul class="keywords">
-					<li>Building ML pipelines</li>
-					<li>Data pre-processing</li>
-					<li>Flux.ml</li>
-					<li>MLJ</li>
-					<li>XGBoost</li>
-					<li>Plots.jl</li>
-					<li>Gadfly</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Firebase</h4>
-				</div>
-				<ul class="keywords">
-					<li>Firestore</li>
-					<li>Real-time Database</li>
-					<li>Firebase Storage</li>
-					<li>Firebase Auth</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Kotlin/Java</h4>
-				</div>
-				<ul class="keywords">
-					<li>Android application development</li>
-					<li>General-purpose programming</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>C#</h4>
-				</div>
-				<ul class="keywords">
-					<li>Xamarin</li>
-					<li>Azure Functions</li>
-					<li>WPF applications</li>
-					<li>General-purpose programming</li>
-					<li>Data science</li>
-					<li>Machine learning using ML.NET</li>
-					<li>MVVM architecture</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Telugu</strong>
-				</div>
-				<div class="fluency">
-					Somwhat of a native speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Hindi</strong>
-				</div>
-				<div class="fluency">
-					Not super fluent.
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
 
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Music production and composition</h4>
-				</div>
-				<ul class="keywords">
-					<li>Electronica</li>
-					<li>Progressive music</li>
-					<li>Dance</li>
-					<li>Ambient</li>
-					<li>Bootlegs/remixes</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Computer science stuff</h4>
-				</div>
-				<ul class="keywords">
-					<li>HackerRank</li>
-					<li>CodeChef</li>
-					<li>Kaggle</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Outdoor stuff</h4>
-				</div>
-				<ul class="keywords">
-					<li>Badminton</li>
-					<li>Soccer</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
+.summary {
+  margin: 5px 0 5px;
+}
 
-	</div>
-	
-	</body>
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Rohan Bojja</h1>
+            <h2>Developer</h2>
+        </div>
+        <div class="profile-pic pull-right">
+            <img src="IMG_0027.jpg" alt="profile-pic">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text"> Hyderabad Telangana 500036 IN</h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:rohanbojja@outlook.com" target="_blank">
+                                rohanbojja@outlook.com
+                            </a>
+                        </h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-mobile"></i>
+                
+                        <h6 class="info-text">+91 (903) 021-9986</h6>
+                </div>
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-globe"></i>
+                
+                        <h6 class="info-text">
+                            <a href="http://rohanbojja.com" target="_blank">
+                                rohanbojja.com
+                            </a>
+                        </h6>
+                </div>
+        
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-soundcloud"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://soundcloud.com/rohanbojja/popular-tracks" target="_blank">
+                                                 rohanbojja
+                                             </a>
+                                         </h6>
+                                 </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/rohanbojja" target="_blank">
+                                                 rohanbojja
+                                             </a>
+                                         </h6>
+                                 </div>
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/rohanbojja/" target="_blank">
+                                                rohanbojja
+                                            </a>
+                                        </h6>
+                                </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-stackoverflow"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://stackoverflow.com/users/story/726872" target="_blank">
+                                                 StackOverflow
+                                             </a>
+                                         </h6>
+                                 </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-portfolio"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://www.rohanbojja.com/page/resume.html" target="_blank">
+                                                 Updated portfolio.
+                                             </a>
+                                         </h6>
+                                 </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Web Development</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Blazor</h6>
+                                    <h6 class="main-skill skill">HTML5</h6>
+                                    <h6 class="main-skill skill">CSS</h6>
+                                    <h6 class="main-skill skill">Javascript</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Python</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Keras/TF</h6>
+                                    <h6 class="main-skill skill">Numpy</h6>
+                                    <h6 class="main-skill skill">Scikit-learn</h6>
+                                    <h6 class="main-skill skill">Pandas</h6>
+                                    <h6 class="main-skill skill">Matplotlib</h6>
+                                    <h6 class="main-skill skill">.NET Core</h6>
+                                    <h6 class="main-skill skill">Web2py/Flask</h6>
+                                    <h6 class="main-skill skill">General-purpose scripting</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Julia</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Building ML pipelines</h6>
+                                    <h6 class="main-skill skill">Data pre-processing</h6>
+                                    <h6 class="main-skill skill">Flux.ml</h6>
+                                    <h6 class="main-skill skill">MLJ</h6>
+                                    <h6 class="main-skill skill">XGBoost</h6>
+                                    <h6 class="main-skill skill">Plots.jl</h6>
+                                    <h6 class="main-skill skill">Gadfly</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Firebase</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Firestore</h6>
+                                    <h6 class="main-skill skill">Real-time Database</h6>
+                                    <h6 class="main-skill skill">Firebase Storage</h6>
+                                    <h6 class="main-skill skill">Firebase Auth</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Kotlin/Java</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Android application development</h6>
+                                    <h6 class="main-skill skill">General-purpose programming</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>C#</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Xamarin</h6>
+                                    <h6 class="main-skill skill">Azure Functions</h6>
+                                    <h6 class="main-skill skill">WPF applications</h6>
+                                    <h6 class="main-skill skill">General-purpose programming</h6>
+                                    <h6 class="main-skill skill">Data science</h6>
+                                    <h6 class="main-skill skill">Machine learning using ML.NET</h6>
+                                    <h6 class="main-skill skill">MVVM architecture</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Native speaker)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Telugu <em>(Somwhat of a native speaker)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Hindi <em>(Not super fluent.)</em></h6>
+                        </li>
+                </ul>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Music production and composition</h4>
+                            <ul class="minimal">
+                                    <li>Electronica</li>
+                                    <li>Progressive music</li>
+                                    <li>Dance</li>
+                                    <li>Ambient</li>
+                                    <li>Bootlegs/remixes</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Computer science stuff</h4>
+                            <ul class="minimal">
+                                    <li>HackerRank</li>
+                                    <li>CodeChef</li>
+                                    <li>Kaggle</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Outdoor stuff</h4>
+                            <ul class="minimal">
+                                    <li>Badminton</li>
+                                    <li>Soccer</li>
+                            </ul>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Self-proclaimed software developer and machine learning engineer with lots of enthusiasm and a moderate amount of experience in both the fields.
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://urbanrider.in" target="_blank">
+                                    UrbanRider
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2019</span>
+                                <span class="endDate"> - 02/2020</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Lead Software Developer</h4>
+        
+        
+                    <p class="summary">UrbanRider is an early-stage startup in Hyderabad, that deals with road-side assistance.</p>
+        
+                    <ul>
+                        <li>Built two Android application written in Kotlin for the company.</li>
+                        <li>Utilized Firebase mBaaS for building the platform.</li>
+                        <li>Build an algorithm to find nearby service providers for connecting the users.</li>
+                        <li>Maintained their GIT repo.</li>
+                        <li>Worked on a web interface for admin/moderator panel. (Cloud functions in TS/JS)</li>
+                    </ul>
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    MVSR Engineering College, Hyderabad.
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">01/2017</span>
+                    <span class="endDate"> - 01/2020</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor of Engineering Computer Science</h4>
+        
+              </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Indian Institute of Information Technology, Sri City.
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">01/2015</span>
+                    <span class="endDate"> - 01/2017</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor of Technology Computer Science</h4>
+        
+              </section>
+        </div>
+        <div class="container volunteer-container">
+            <div class="title">
+                <h3>Volunteer</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="http://www.iiits.ac.in" target="_blank">
+                                IIIT-S Coding Club
+                                    <span class="sublink">∙ <a href="http://www.iiits.ac.in" target="_blank" class="sublink">http://www.iiits.ac.in</a></span>
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">07/2016</span>
+                            <span class="endDate"> - 07/2016</span>
+                    </h5>
+                </div>
+                <h5>Mentor</h5>
+        
+                <p class="summary">A coding club for our college freshers.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/rohanbojja/transter-android-user" target="_blank">
+                                Transter
+                                    <span class="sublink">∙ <a href="https://github.com/rohanbojja/transter-android-user" target="_blank" class="sublink">https://github.com/rohanbojja/transter-android-user</a></span>
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">03/2020</span>
+                            <span class="endDate"> - Present</span>
+                    </h5>
+                </div>
+                <h5>Co-founder</h5>
+        
+                <p class="summary">Road-side assistance for everyone. [WIP]</p>
+        
+                <ul>
+                    <li>Two mobile applications written in Kotlin(In the process of porting to Xamarin).</li>
+                    <li>A moderator/admin web panel.(WIP, working with Blazor)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container publications-container">
+            <div class="title">
+                <h3>Publications</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/rohanbojja/RCS" target="_blank">
+                                Rubik&#x27;s Cube Solver
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            03/2017
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">Github</h5>
+        
+                <p class="summary">A robot designed to solve the Rubik’s cube efficiently. Raspberry Pi 2 was used to run Python scripts which would take the state of the cube, compute the shortest path, and turns the servo motors which hold the Rubik’s cube in place, to solve the cube.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/users/rohanbojja/projects/1" target="_blank">
+                                Audient
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            10/2019
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">Github</h5>
+        
+                <p class="summary">Music genre classification using machine learning. Azure function to analyse features and send prediction result. A WPF application to extract audio features from a music library for further processing. A ML.NET pipeline for pre-processing and normalizing the data. A Xamarin Forms and a Blazor web application for end-user consumption. Written entirely in C#.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/rohanbojja/Virtual-OS" target="_blank">
+                                Virtual-OS
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            10/2016
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">Github</h5>
+        
+                <p class="summary">A .NET desktop platform that mimics the look and feel of a classic desktop operating systems such as Microsoft Windows, Mac OS X or KDE. Written in C# for my semester project.</p>
+        
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Transport Management System
+                    </h3>
+                    <h5 class="italic pull-right">
+                            10/2018
+                            </h5>
+                </div>
+        
+                <h5 class="awarder">Github</h5>
+        
+                <p class="summary">A transportation management system that gives the real time location of the buses and their paths. A web service (web2py) and an Android application(written in Java).</p>
+        
+            </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

@@ -2,7 +2,7 @@
   "basics": {
     "name": "Rohan Bojja",
     "label": "Developer",
-    "picture": "",
+    "picture": "IMG_0027.jpg",
     "email": "rohanbojja@outlook.com",
     "phone": "+91 (903) 021-9986",
     "website": "http://rohanbojja.com",
@@ -27,14 +27,14 @@
         "url": "https://github.com/rohanbojja"
       },
 	  {
-        "network": "StackOverflow",
-        "username": "rohanbojja",
-        "url": "https://stackoverflow.com/users/story/726872"
-      },
-	  {
         "network": "LinkedIn",
         "username": "rohanbojja",
         "url": "https://www.linkedin.com/in/rohanbojja/"
+      },
+	  {
+        "network": "StackOverflow",
+        "username": "StackOverflow",
+        "url": "https://stackoverflow.com/users/story/726872"
       },
 	  {
 		"network": "Portfolio",
@@ -129,7 +129,6 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
       "keywords": [
 		"Blazor",
         "HTML5",
@@ -139,7 +138,6 @@
     },
 	{
       "name": "Python",
-      "level": "Master",
       "keywords": [
 		"Keras/TF",
         "Numpy",
@@ -153,7 +151,6 @@
     },
 	{
       "name": "Julia",
-      "level": "Master",
       "keywords": [
 		"Building ML pipelines",
         "Data pre-processing",
@@ -166,7 +163,6 @@
     },
 	{
       "name": "Firebase",
-      "level": "Master",
       "keywords": [
 		"Firestore",
         "Real-time Database",
@@ -176,7 +172,6 @@
     },
     {
       "name": "Kotlin/Java",
-      "level": "Master",
       "keywords": [
         "Android application development",
         "General-purpose programming"
@@ -184,7 +179,6 @@
     },
 	{
       "name": "C#",
-      "level": "Master",
       "keywords": [
         "Xamarin",
 		"Azure Functions",
