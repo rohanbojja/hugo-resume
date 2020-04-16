@@ -1,2 +1,2 @@
-## Welcome to my blog, of sorts.
-`Nothing here yet...`
+## Welcome to my blog.
+`All models are wrong, but some are useful.`
