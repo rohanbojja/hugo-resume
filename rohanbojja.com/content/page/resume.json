@@ -144,7 +144,6 @@
         "Scikit-learn",
         "Pandas",
 		"Matplotlib",
-		".NET Core",
 		"Web2py/Flask",
 		"General-purpose scripting"
       ]
